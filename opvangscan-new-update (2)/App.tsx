@@ -40,3 +40,12 @@ const App = () => {
 };
 
 export default App;
+
+        <div className="app-container"> {/* Fix incomplete HTML class name */}
+            <h1>Data</h1>
+            {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : <p>Loading...</p>}
+        </div>
+    );
+};
+
+export default App;
